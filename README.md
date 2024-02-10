@@ -87,3 +87,7 @@ constructAndGetConfig(config) // if config is a falsy value it returns the defau
 ## Issues
 
 Use Github Issues to file requests and bugs.
+
+## License
+
+MIT License
