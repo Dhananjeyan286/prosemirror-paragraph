@@ -1,0 +1,38 @@
+{
+  "name": "prosemirror-paragraph-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A demo implementation of prosemirror-paragraph package along with prosemirror-example-setup package",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c ./merge.config.js"
+  },
+  "keywords": [
+    "prosemirror",
+    "prosemirror",
+    "paragraph",
+    "prosemirror",
+    "paragraphs",
+    "prosemirror-paragraph",
+    "prosemirror",
+    "paragraph",
+    "node",
+    "paragraph",
+    "node",
+    "prosemirror-paragraph-demo",
+    "paragraph demo"
+  ],
+  "author": "Dhananjeyan RM",
+  "license": "ISC",
+  "dependencies": {
+    "prosemirror-model": "^1.19.4",
+    "prosemirror-schema-basic": "^1.2.2",
+    "prosemirror-schema-list": "^1.3.0",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.32.7"
+  },
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
