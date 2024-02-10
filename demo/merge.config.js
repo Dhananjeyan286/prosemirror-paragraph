@@ -7,7 +7,7 @@ let configuration = [
         input: "./src/index.js",
         output: {
             format: "iife",
-            file: "./dist/index.js",
+            file: "./bundle.js",
             name: "ProsemirrorParagraphDemo",
         },
         plugins: [

@@ -3,6 +3,7 @@ import { EditorView } from "prosemirror-view"
 import { Schema } from "prosemirror-model"
 import { schema } from "prosemirror-schema-basic"
 import { addListNodes } from "prosemirror-schema-list"
+import { addParagraphNode, getPlugins } from "prosemirror-paragraph"
 
 let config = [
     "textAlignment",
@@ -21,13 +22,13 @@ let config = [
 let nodes = addListNodes(schema.spec.nodes, "paragraph block*", "block")
 
 let mySchema = new Schema({
-    nodes: ProsemirrorParagraph.addParagraphNode(nodes, config),
+    nodes: addParagraphNode(nodes, config),
     marks: schema.spec.marks,
 });
 
 window.view = new EditorView(document.querySelector("#editor"), {
     state: EditorState.create({
         schema: mySchema,
-        plugins: ProsemirrorParagraph.getPlugins({schema: mySchema, config: config}),
+        plugins: getPlugins({schema: mySchema, config: config}),
     }),
 });
