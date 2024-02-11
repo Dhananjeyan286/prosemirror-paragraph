@@ -1,4 +1,4 @@
-# Prosemirror-paragraph
+# prosemirror-paragraph
 
 This package defines a prosemirror paragraph node which is used to implement features such as **text-alignment, text-direction and line-height.**
 
