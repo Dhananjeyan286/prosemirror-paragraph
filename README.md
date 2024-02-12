@@ -1,4 +1,4 @@
-# Prosemirror-paragraph
+# prosemirror-paragraph
 
 This package defines a prosemirror paragraph node which is used to implement features such as **text-alignment, text-direction and line-height.**
 
@@ -22,7 +22,7 @@ import { schema } from "prosemirror-schema-basic"
 import { addListNodes } from "prosemirror-schema-list"
 import { addParagraphNode, getPlugins } from "prosemirror-paragraph"
 
-let config = ["textAlignment", "textDirection", "lineHeight"] // it can also be like this
+let config = ["textAlignment", "textDirection", "lineHeight"]
 
 // config can also be passed like these
 // let config = [
@@ -33,7 +33,7 @@ let config = ["textAlignment", "textDirection", "lineHeight"] // it can also be 
 //    },
 //    {
 //        name: "lineHeight",
-//        default: "normal" // initially line-height will be set to "normal" which is ~1.2, default values can also be anyone of these "1.0", "1.5", "2.0"
+//        default: "normal" // initially line-height will be set to "normal" which is ~1.2, default values can be anyone of these "1.0", "1.5", "2.0"
 //    },
 // ];
 
@@ -58,12 +58,12 @@ window.view = new EditorView(document.querySelector("#editor"), {
 
 import { getParagraphNode, addParagraphNode, getCommands, getEnterHandlingPlugin, getMenuBar, getMenuBarPlugin, , constructAndGetConfig  } from "prosemirror-paragraph"
 
-getParagraphNode(config) // returns the paragraph node definition
+getParagraphNode(config) // returns the paragraph node
 
 addParagraphNode(nodes, config) // returns the nodes object after adding the paragraph node
 
 getCommands(config) // returns an object consisting of keys named setLineHeight, setTextDirection and setTextAlignment
-// all these keys consists of commands used to change the line-height, text-direction, text-alignment values in the editor
+// all these keys consists of functions used to change the line-height, text-direction, text-alignment values in the editor
 
 getEnterHandlingPlugin(schema) // returns a plugin to tell to the editor on what needs to be done if enter key is pressed
 // it is generally used to carry forward the line-height, text-direction and text-alignment values applied to the previous paragraph
