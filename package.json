@@ -1,6 +1,6 @@
 {
   "name": "prosemirror-paragraph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A prosemirror-paragraph node which is used to implement features such as text-alignment, text-direction and line-height",
   "main": "./dist/index.es.js",
   "exports": {
